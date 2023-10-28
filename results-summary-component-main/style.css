@@ -1,8 +1,17 @@
+:root {
+    font-size: 10px;
+    --primary-gradient: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+    --text-primary: #fff;
+    --text-secondary: #CAC9FF;
+}
+
+
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0;
+    font-size: 1.8rem;
 }
 
 .card{
@@ -29,7 +38,7 @@ body{
     width: 368px;
     height: 512px;
     border-radius: 32px;
-    background: var(--Gradient-1, linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%)); 
+    background: var(--primary-gradient); 
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -39,9 +48,9 @@ body{
 }
 
 .title-1{
-    color: #CAC9FF;
+    color: var(--text-secondary);
     font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     text-transform:capitalize;
     text-align: center;
@@ -60,38 +69,36 @@ body{
 .result-scors{
     display: flex;
     
-    color: #FFF;
+    color:var(--text-primary);
     text-align: center;
     font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 72px;
+    font-size: 7.2rem;
     font-weight: 700;
     line-height: 72px; 
 
 }
 .max{
-    color:#CAC9FF;
+    color:var(--text-secondary);
     font-family: 'Hanken Grotesk',sans-serif;
     margin: 0;
-    font-size: 18px;
     font-weight: 700;
     text-align: center;
 }
 
 .feedback{
-    color: #FFF;
+    color:var(--text-primary);
     padding-left: 90px;
     padding-right: 100px;
     font-family: 'Hanken Grotesk',sans-serif;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 700;
 }
 
 .dicrection{
-    color:#CAC9FF;
+    color:var(--text-secondary);
     width: 260px;
     text-align: center;
     font-family: 'Hanken Grotesk',sans-serif;
-    font-size: 18px;
     font-weight: 500;
 }
 
@@ -111,7 +118,7 @@ body{
 .title-2{
     color: #303B59;
     font-family: 'Hanken Grotesk',sans-serif;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     text-transform: capitalize;
     margin: 0;
@@ -134,7 +141,6 @@ body{
 .summary-items-1{
     color:#F55;
     font-family: 'Hanken Grotesk',sans-serif;
-    font-size: 18px;
     font-weight: 50px;
     text-transform: capitalize;
     margin: 0;
@@ -151,7 +157,6 @@ body{
     color: #303B59;
     text-align: right;
     font-family: 'Hanken Grotesk',sans-serif;
-    font-size: 18px;
     font-weight: 700;
     padding-left: 104px;
     margin-right: 16px;
@@ -172,7 +177,6 @@ body{
 .summary-items-2{
     color:#FFB21E;
     font-family: 'Hanken Grotesk',sans-serif;
-    font-size: 18px;
     font-weight: 50px;
     text-transform: capitalize;
     margin: 0;
@@ -189,7 +193,6 @@ body{
     color: #303B59;
     text-align: right;
     font-family: 'Hanken Grotesk',sans-serif;
-    font-size: 18px;
     font-weight: 700;
     padding-left: 102px;
     margin-right: 16px;
@@ -210,7 +213,6 @@ body{
 .summary-items-3{
     color:#00BB8F;
     font-family: 'Hanken Grotesk',sans-serif;
-    font-size: 18px;
     font-weight: 50px;
     text-transform: capitalize;
     margin: 0;
@@ -227,7 +229,6 @@ body{
     color: #303B59;
     text-align: right;
     font-family: 'Hanken Grotesk',sans-serif;
-    font-size: 18px;
     font-weight: 700;
     padding-left: 114px;
     margin-right: 16px;
@@ -249,7 +250,6 @@ body{
 .summary-items-4{
     color:#1125D6;
     font-family: 'Hanken Grotesk',sans-serif;
-    font-size: 18px;
     font-weight: 50px;
     text-transform: capitalize;
     margin: 0;
@@ -266,7 +266,6 @@ body{
     color: #303B59;
     text-align: right;
     font-family: 'Hanken Grotesk',sans-serif;
-    font-size: 18px;
     font-weight: 700;
     padding-left: 116px;
     margin-right: 16px;
@@ -278,13 +277,12 @@ body{
     flex-shrink: 0;
     border-radius: 128px;
     border: none;
-    background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+    background: var(--primary-gradient);
 }
 .button-text{
-    color: #FFF;
+    color: var(--text-primary);
     text-align: right;
     font-family: 'Hanken Grotesk',sans-serif;
-    font-size: 18px;
     font-weight: 700;
     text-transform: capitalize;
 }
